@@ -1,8 +1,11 @@
+
 import React,{Fragment} from 'react';
 import  "./styles/styles.scss";
 import IA from './image/IA.jpg';
 import Curso from './Curso';
-
+import imagenes from './images'
+/* import hugo from './image/hugo.jpg';
+import hola from './image/hola.PNG'; */
 
 
 
@@ -27,19 +30,41 @@ const App = ()=>(
 <div className='ed-grid m-grid-4'>
 
 {/* codigo card */}
-<Curso />
-<Curso/>
-<Curso/>
-<Curso/>
-<Curso/>
-<Curso/>
-<Curso/>
-<Curso/>
-<Curso/>
-<Curso/>
-<Curso/>
-<Curso/>
-<Curso/>
+
+    <Curso   
+             title="Trigonometria"
+             image={imagenes.imageAlgebra}
+             price="50 UD"
+             imgTheacher={imagenes.imageHugo}
+             nameTheacher="Hugo Steven"
+    />
+    <Curso
+             title="Calculo Integral"
+             image={imagenes.imageCalculo}
+             price="100 UD"
+             imgTheacher={imagenes.imageSteven}
+             nameTheacher="Steven poveda"
+
+    />
+    <Curso
+             title="Calculo Integral"
+             image={imagenes.imageCalculo}
+             price="100 UD"
+             imgTheacher={imagenes.imageSteven}
+             nameTheacher="Steven poveda"
+
+    />
+    <Curso
+             title="Calculo Integral"
+             image={imagenes.imageCalculo}
+             price="100 UD"
+             imgTheacher={imagenes.imageSteven}
+             nameTheacher="Steven poveda"
+
+    />
+
+ 
+
 
 
 </div>
