@@ -40,11 +40,18 @@ const App = ()=>(
     />
     <Curso
              title="Calculo Integral"
-             image={imagenes.imageCalculo}
+             //image={imagenes.imageCalculo}
              price="100 UD"
              imgTheacher={imagenes.imageSteven}
              nameTheacher="Steven poveda"
 
+    />
+      <Curso   
+             title="Trigonometria"
+             image={imagenes.imageAlgebra}
+             price="50 UD"
+             imgTheacher={imagenes.imageHugo}
+             nameTheacher="Hugo Steven"
     />
     <Curso
              title="Calculo Integral"
@@ -54,6 +61,13 @@ const App = ()=>(
              nameTheacher="Steven poveda"
 
     />
+      <Curso   
+             title="Trigonometria"
+             image={imagenes.imageAlgebra}
+             price="50 UD"
+             imgTheacher={imagenes.imageHugo}
+             nameTheacher="Hugo Steven"
+    />
     <Curso
              title="Calculo Integral"
              image={imagenes.imageCalculo}
@@ -62,6 +76,9 @@ const App = ()=>(
              nameTheacher="Steven poveda"
 
     />
+   
+   
+
 
  
 
