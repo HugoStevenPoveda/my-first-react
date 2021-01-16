@@ -5,23 +5,7 @@ import IA from './image/IA.jpg';
 import Curso from './Curso';
 /* import imagenes from './images' */
  
-const cursos =[
-{ "title":"Algebra",
-  "image":"https://2.bp.blogspot.com/-0-FkWeeka_w/W2H_o8477yI/AAAAAAAAYko/s_0wvrAqgPcP_vryv1fY64u0N5HElg3zQCLcBGAs/s1600/algebra%2Bbasica%2Bcurso%2Bonline%2Bgratis.jpg",
-  "price":"50 UD",
-  "nameTheacher":"Hugo Steven"},
 
-{ "title":"trigonometria",
-"image":"https://www.becasinternacionales.net/webapp/img/courses/dbe1b6_aprende-trigonometria-desde-cero_w688.jpg",
-"price":"10 UD",
-"nameTheacher":"Hugo Steven"},
-
-{"title":"calculo",
-"image":"https://dev-res.thumbr.io/libraries/45/01/lib/1466689182804_45.jpg?size=854x493s&ext=jpg",
-"price":"50 UD",
-"nameTheacher":"Hugo Steven"}
-
-]
 
 
 
@@ -44,23 +28,7 @@ const App = ()=>(
 </div>
 
 
-<div className='ed-grid m-grid-4'>
 
-    {
-      cursos.map( curso => <Curso  title= {curso.title}  nameTheacher={curso.nameTheacher} image={curso.image} price={curso.price} />)
-
- 
-
-
-      
-    }
-
-
-
-   
-
-
-</div>
 
 
   

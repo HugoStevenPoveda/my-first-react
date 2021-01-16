@@ -23,7 +23,7 @@ const Curso = ({image,title,nameTheacher,price})=>{
     </div> 
   </div>
   <div className="s-main-center">
-    <a className="button--ghost-alert button--tiny" href="">{`$ ${price}`}</a>
+    <a className="button--ghost-alert button--tiny" href="https://github.com/HugoStevenPoveda/my-first-react">{`$ ${price}`}</a>
   </div>
 </div>
 </article>}
