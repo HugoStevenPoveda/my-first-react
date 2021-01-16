@@ -1,17 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 
 
-const Curso = ({image,title,imgTheacher,nameTheacher,price})=>{
+
+
+const Curso = ({image,title,nameTheacher,price})=>{
  return  <article className="card">
     
 <div className=" img-container s-ratio-16-9 s-radius-tr s-radius-tl">
-{image
-  ?<img src={image} alt="props.nameTheacher" />
-  :<p> No hay imagen</p>
-
-}
-
+<img src={image} alt="props.nameTheacher" />
    
 </div>
 <div className="card__data s-border s-radius-br s-radius-bl s-pxy-2">
@@ -19,9 +17,7 @@ const Curso = ({image,title,imgTheacher,nameTheacher,price})=>{
   <div className="s-mb-2 s-main-center">
     <div className="card__teacher s-cross-center">
       <div className="card__avatar s-mr-1">
-        <div className="circle img-container">
-          <img src={imgTheacher}  alt="props.title "/>
-        </div>
+        
       </div>
       <span className="small"> {nameTheacher}</span>
     </div> 
@@ -31,7 +27,26 @@ const Curso = ({image,title,imgTheacher,nameTheacher,price})=>{
   </div>
 </div>
 </article>}
-   
+
+Curso.propTypes={
+  title:PropTypes.string,
+  nameTheacher:PropTypes.string,
+  price:PropTypes.string,
+  image:PropTypes.string,
+  
+
+}
+ 
+Curso.defaultProps={
+
+  title:"proximo curso",
+  nameTheacher:"por asignar ",
+  price:" cero UD",
+  image:"https://4.bp.blogspot.com/-ZIXB-sB1oGQ/WyhWHEXS_dI/AAAAAAAAWEQ/YFaaAFmYy18VfroS59Ha0B4IUJL232xiACLcBGAs/s640/mejores%2Bcanales%2Byoutube%2Bmatematicas.jpg"
+
+
+
+}
 
 
 
