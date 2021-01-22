@@ -8,12 +8,33 @@ class Formulario extends Component{
         
         this.state={
             nombre:"",
-            correo:""
-
-
+            correo:"",
+            fecha:new Date()
         }
 
+        this.cambiarNombre =this.cambiarNombre.bind(this)
+        this.cambiarCorreo =this.cambiarCorreo.bind(this)
+        this.cambiarFecha =this.cambiarFecha.bind(this)
+
+
+            
     }
+
+
+    cambiarNombre(e){
+       this.setState({
+            nombre: e.target.value })
+      }
+
+      cambiarCorreo(e){
+        this.setState({
+             correo: e.target.value })
+       }  
+
+       cambiarFecha(e){
+        this.setState({
+            fecha: new Date()})
+       } 
 
     render(){
         return(
@@ -29,11 +50,7 @@ class Formulario extends Component{
                                 <label>Nombre del usuario </label>
                                 <input 
                                 type ="text" 
-                                onChange={e=>this.setState({ nombre: e.target.value
-
-
-
-                                })} />
+                                onChange={this.cambiarNombre} />
                             
                             </div>
 
@@ -43,13 +60,11 @@ class Formulario extends Component{
                                     <input 
                                      aria-label ="email" 
                                      type ="email" 
-                                    onChange={ e=>this.setState({correo:e.target.value})
+                                     onChange={this.cambiarCorreo}
 
-
-
-                                    }
                                       />
                             </div>
+
                     </div>
 
                {/*     <div className="ed-item form__item">
@@ -58,6 +73,14 @@ class Formulario extends Component{
                       />
 
                    </div> */}
+
+                   <div>
+                   <h4>
+                   {Math.ceil(this.state.fecha/1000)}
+
+                   </h4>
+
+                   </div>
 
 
 
@@ -97,6 +120,31 @@ class Formulario extends Component{
 
 
         )
+
+
+    }
+
+    componentDidMount(){
+
+        this.intervaloFecha = setInterval(()=>{
+            this.cambiarFecha()
+            console.log(new Date()) } 
+            
+            , 1000)
+    }
+
+
+
+
+   componentDidUpdate(prevState,prevProps){
+     /*  console.log(prevState )
+      console.log(prevProps ) */
+
+    }
+
+
+    componentWillMount(){
+        clearInterval(this.intervaloFecha)
 
 
     }
