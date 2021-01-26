@@ -6,7 +6,7 @@ import proximo from './image/proximo.jpg';
 
 import calculointegral from './image/calculointegral.JPG';
 
-const imagenes ={
+const img ={
     "imageAlgebra": hola,
     "imageHugo":hugo,
     "imageSteven":STEVEN,
@@ -15,4 +15,4 @@ const imagenes ={
 
 
 }
-export default imagenes
+export default img

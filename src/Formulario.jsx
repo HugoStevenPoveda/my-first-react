@@ -1,3 +1,4 @@
+/* formulario  */
 import React,{Component} from 'react';
 
 
@@ -18,7 +19,7 @@ class Formulario extends Component{
 
 
             
-    }
+    }/* fin metodo constructor */
 
 
     cambiarNombre(e){
@@ -159,7 +160,7 @@ class Formulario extends Component{
 
 
 
-}
+}/* fin de clase formulario */
 
 
 

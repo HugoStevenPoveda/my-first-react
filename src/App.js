@@ -5,6 +5,8 @@ import  "./styles/styles.scss";
 /* import imagenes from './images' */
 import Banner from './Banner';
 import Formulario from './Formulario';
+import CourseGrid from './CourseGrid';
+
  
 
 
@@ -19,7 +21,7 @@ const App = ()=>(
 
   <Banner />  
   <Formulario   />
-
+  <CourseGrid />
 
 
 
