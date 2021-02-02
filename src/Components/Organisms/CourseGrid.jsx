@@ -1,6 +1,6 @@
 import React from "react";
 import Curso from "./Curso"
-import img from "./images"
+import img from "../../images"
 
 const cursos =[
     {

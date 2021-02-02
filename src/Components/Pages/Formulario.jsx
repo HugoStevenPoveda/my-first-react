@@ -129,7 +129,7 @@ class Formulario extends Component{
 
         this.intervaloFecha = setInterval(()=>{
             this.cambiarFecha()
-            console.log(new Date()) } 
+           /*  console.log(new Date()) */ } 
             
             , 1000)
     }

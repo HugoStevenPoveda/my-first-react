@@ -1,6 +1,8 @@
 
 import React from 'react';
-import IA from './image/IA.jpg';
+/* import IA from './image/IA.jpg'; */
+import IA from "../../image/IA.jpg";
+
 
 
 const Banner = ()=>(

@@ -1,16 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import{
+  Link
+}from "react-router-dom";
 
 
 
 
 
-const Curso = ({image,title,nameTheacher,price})=>{
+const Curso = ({image,title,nameTheacher,price,id})=>{
  return  <article className="card">
     
 <div className=" img-container s-ratio-16-9 s-radius-tr s-radius-tl">
-<img src={image} alt="props.nameTheacher" />
-   
+ <Link to={`/cursos/${id}`}>
+    <img src={image} alt="props.nameTheacher" />
+ </Link>
+
 </div>
 <div className="card__data s-border s-radius-br s-radius-bl s-pxy-2">
   <h3 className="t5 s-mb-2 s-center"> {title} </h3>
@@ -47,9 +52,12 @@ Curso.defaultProps={
 
 
 }
+   
 
 
 
 
 
 export default Curso;
+
+   
