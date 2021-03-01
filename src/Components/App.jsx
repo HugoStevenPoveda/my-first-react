@@ -79,7 +79,7 @@ export default App;
 
 //reglas jsx
 //1:toda etiqueta debe cerrarse
-//2: todo componente sol puede retornar un elemento padre
+//2: todo componente solo puede retornar un elemento padre
 //3:apollarse de los fragment cuando se necesita enciar dos elementos, en cuaquiera de las moneclatura fragment => <> </>
 
 /* 

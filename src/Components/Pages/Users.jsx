@@ -27,7 +27,7 @@ class Users extends Component{
         )} */
 
 componentDidMount(){
-  axios.get('https://jsonplaceholder.typicode.com/users')
+  axios.get('http://localhost:8000/api/hello-view/')
   .then(resp=>{
 
          this.setState({users:resp.data} )
